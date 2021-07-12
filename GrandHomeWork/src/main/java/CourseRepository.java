@@ -3,5 +3,6 @@ import models.Course;
 import java.util.Optional;
 
 public interface CourseRepository {
-    Optional<Course> findById(Integer id);
+    public Optional<Course> findById(Long id);
+    public Optional<Course> findByName(String name);
 }
